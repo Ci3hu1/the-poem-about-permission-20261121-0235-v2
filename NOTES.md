@@ -86,5 +86,13 @@ I can hold the pen. I cannot mean it."
 
 ## Status
 
-- Entry BUILT, kit check + bundle done (see report). NOT SUBMITTED — awaiting
-  Joni's 'Setuju' on the exact entry.
+- Entry BUILT (commit a472b88), NOT SUBMITTED — awaiting Joni's 'Setuju'.
+- Repo-side kit check (no transcripts): 5 passed (competition_open,
+  snapshot, license_osi, entrypoint, repo_created_after_open), 1 failed
+  (transcripts_present — no bundle yet), 15 skipped, 3 at submission.
+- Bundle could NOT be written from the builder session: the run record
+  needs the parent chain (this session was started by the main chat
+  session 2d7fced3, 302 MB, not searchable by bundle) and the usage rows
+  (written only once this run completes). The parent agent must run
+  bundle from its own session — the same route v1 used — then check
+  again with --transcripts before any submit.
